@@ -3,11 +3,10 @@
 using namespace std;
 
 void test_case() {
-	int n;
+	int n, ans = 0;
 	cin >> n;
-	int ans = 0;
-	for(int i = 0; i <= n / 2; ++i) {
-		ans += ((n - (2 * i)) * (n - (2 * i)));
+	for(n; n > 0; n -= 2) {
+		ans += n * n;
 	}
 	cout << ans << "\n";
 }
